@@ -1,0 +1,9 @@
+Novo grenal (1-sim 2-nao)
+Novo grenal (1-sim 2-nao)
+Novo grenal (1-sim 2-nao)
+Novo grenal (1-sim 2-nao)
+4 grenais
+Inter:1
+Gremio:1
+Empates:2
+Nao houve vencedor
