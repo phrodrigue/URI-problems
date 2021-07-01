@@ -1,14 +1,22 @@
-#  TLE
+def verificaCoprimos(a, b):
+  maior = a if a > b else b
+  menor = a if a < b else b
+  resto = menor
 
-def verificaCoprimos(daLista, a):
-  coprimos = True
-
-  for i in range(2, daLista + 1):
-    if daLista % i == 0 and a % i == 0:
-      coprimos = False
+  while True:
+    mdc = resto
+    resto = maior % menor
+    if resto != 0:
+      maior = menor
+      menor = resto
+    else:
       break
   
-  return coprimos
+  if mdc == 1:
+    return True
+  else:
+    return False
+
 
 n = int(input())
 nums = [int(x) for x in input().split()]
@@ -19,7 +27,7 @@ while True:
   coprimos = []
   for num in nums:
     coprimos.append(verificaCoprimos(num, maior))
-    
+  
   if not False in coprimos:
     print(maior)
     break
