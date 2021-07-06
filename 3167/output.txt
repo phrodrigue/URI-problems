@@ -1,0 +1,12 @@
+1 Palavra "aaaz" na diagonal secundaria
+2 Palavra "bbbz" acima da diagonal secundaria
+2 Palavra "cccz" acima da diagonal secundaria
+2 Palavra "dddz" acima da diagonal secundaria
+2 Palavra "eeez" acima da diagonal secundaria
+2 Palavra "ffz" acima da diagonal secundaria
+2 Palavra "gz" acima da diagonal secundaria
+2 Palavra "h" acima da diagonal secundaria
+3 Palavra "iiz" abaixo da diagonal secundaria
+3 Palavra "jz" abaixo da diagonal secundaria
+3 Palavra "k" abaixo da diagonal secundaria
+4 Palavra "zz" inexistente
