@@ -1,22 +1,28 @@
 # WRONG ANSWER
 
+from datetime import date, timedelta
+
+
 def verificaAno(At):
   d = At * n * 365
   dInt = int(d)
   
   totDias = dInt
 
+
   dias = totDias
   totDias -= 10
   ano = 2021
-
+  
   while totDias > 365:
     totDias -= 365
     ano += 1
     
-    if ano % 4 == 0:
+    if ano % 4 == 0:## and (ano % 100 != 0 or ano % 400 == 0)
       dias += 1
 
+
+  """
   mes = 1
   for m in meses:
     if totDias >= m:
@@ -26,8 +32,12 @@ def verificaAno(At):
       break
 
   data = f"{ano:0>4}-{mes:0>2}-{totDias:0>2}"
+  """
+  
+  d = date(2020, 12, 21)
+  d = d + timedelta(days = dias)
 
-  return [dias, data]
+  return [dias, d]
 
 
 meses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
